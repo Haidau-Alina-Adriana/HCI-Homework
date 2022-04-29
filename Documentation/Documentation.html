@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ro" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholary HTML</title>
+    <link rel="stylesheet" href="Documentation.css">
+</head>
+
+<body prefix="schema: http://schema.org">
+
+    <header>
+        <h1>Plants register App</h1>
+    </header>
+    <div class="top-info" role="contentinfo">
+        <dl>
+            <dt>Authors</dt>
+            <dd typeof="sa:ContributorRole" property="schema:author">
+                <span typeof="schema:Person">
+                    <meta property="schema:givenName" content="Adriana">
+                    <meta property="schema:additionalName" content="Alina">
+                    <meta property="schema:familyName" content="Haidau">
+                    <a href="https://github.com/Haidau-Alina-Adriana">
+                        <span property="schema:name">Haidau Alina-Adriana</span>
+                </a>
+                </span>
+            </dd>
+        </dl>
+    </div>
+
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+        <h2><span>1. </span>The scope of application</h2>
+        <p>
+            I created a graphical interface for an application that helps people to take care of their plants.
+        </p>
+    </section>
+
+    <section id="introduction">
+        <h2><span>2. </span>Introduction</h2>
+        <p>
+            There are more and more people in the world who are passionate about nature and with plants in general. Not all plants need to be watered as often as others, and also not all plants need to be fertilized as often (if you want your plants to live as much
+            as possible). With this app a person can keep track of their interraction with their little buddies.
+            <br><span class="tab"></span>In the same time this app comes in handy for those people that want to find the right informations fast and with no further research on more sites, because we all know how hard it to find the right data when there
+            are a lot of contradictory informations on the internet, so this app will eliminate all the dense and overwhelming quantity of informations.
+        </p>
+    </section>
+
+    <section id="architecture">
+        <h2><span>3. </span>Application architecture</h2>
+        <p>
+            The application opens with the start page, then after taping a user can login or create a new account if he doesn't have one. After authentication/registration, he is redirected to the main page where there are two possible outcomes: either the page has
+            only a discover section and instagram community section, or a list of plants that need to be taken care of. From here, the user can update watering/fertilizer informations or can use the bottom menu to go to the plants he saved, to the plants
+            that he currently has, can go to his profile, or to the searching feature.
+            <br><span class="tab"></span>The application contains 10 pages.
+        </p>
+    </section>
+
+    <section id="pages">
+        <h2><span>4. </span>Application pages</h2>
+
+        <section id="pages-start">
+            <h3><span>4.1 </span>Start</h3>
+            <p>
+                The Start page is kind of a loading page, but it is required a tap on the "Start taking care of your plants" to move on the next page.
+            </p>
+
+            <img src="pages/start-page.png" alt="Start Page" class="pages">
+        </section>
+
+
+        <section id="pages-login">
+            <h3><span>4.2 </span>Login</h3>
+            <p>
+                In this page the user can login into the app using his email and password, or login using facebook, instagram or google if the account was created with one of this three well known app.
+            </p>
+            <img src="pages/login-page.png" alt="Login Page" class="pages">
+
+
+        </section>
+
+        <section id="pages-register">
+            <h3><span>4.3 </span>Create account</h3>
+            <p>
+                This page offers the user the possibility of creating an account by entering personal data such as name, email and password, or register using an affiliate app such as google, facebook or instagram,.
+            </p>
+
+            <img src="pages/register-page.png" alt="Register Page" class="pages">
+        </section>
+
+        <section id="pages-profile">
+            <h3><span>4.4 </span>Profile</h3>
+            <p>
+                After the user logged in or registered, he has the possibility to see his profile containing his name or edit it, he can see the plants he saved, or he can log off.
+            </p>
+
+            <img src="pages/profile-page.png" alt="Profile Page" class="pages">
+        </section>
+
+        <section id="pages-home">
+            <h3><span>4.5 </span>Home</h3>
+            <p>
+                Once the user has logged in/registered, he will be redirected to the home page. Depending on the method that he entered to the app (login or register), the home page can either contain the plants that need some attention, either only a section of discover
+                new things about plants and instagram community will be available on the page.
+            </p>
+
+            <img src="pages/home-without-notifications-page.png" alt="Home Page" class="pages">
+            <img src="pages/home-with-notifications-page.png" alt="Home Page" class="pages">
+        </section>
+
+        <section id="pages-favorites">
+            <h3><span>4.6 </span>Favorites</h3>
+            <p>
+                On this page the user can see the plants that he saved and has the possibility to add them in their "glossary" by taping the "+" icon, or remove them from saved plants by taping heart icon next to each plant.
+            </p>
+
+            <img src="pages/favorites-page.png" alt="Favorites Page" class="pages">
+        </section>
+
+        <section id="pages-search">
+            <h3><span>4.7 </span>Search</h3>
+            <p>
+                This page offers the possibility to search for a specific plant and add them to the "glossary" or save them in favorites list.
+            </p>
+
+            <img src="pages/search-and-add-plant-page.png" alt="Search Page" class="pages">
+        </section>
+
+        <section id="pages-calendar">
+            <h3><span>4.8 </span>Calendar</h3>
+            <p>
+                In calendar page the user can mark that he watered and/or added fertilizer on a specific plant for the current day, or he can choose a previous date.
+            </p>
+
+            <img src="pages/calendar-page.png" alt="Calendar Page" class="pages">
+        </section>
+
+        <section id="pages-plants">
+            <h3><span>4.9 </span>My plants</h3>
+            <p>
+                This page can contain no plants, in which case the user has the possibility to add some by taping the "+" icon. In case the user has some plants added, they will appear here with the informations about last watering and fertilizer date, the possibility
+                to remove a plant that he no longer has, and can mark that as watered/fertilized or add a note.
+            </p>
+
+            <img src="pages/empty-bin-plants-page.png" alt="My Plants Page" class="pages">
+            <img src="pages/bin-with-flowers-no-filters-page.png" alt="My Plants Page" class="pages">
+            <img src="pages/bin-with-flowers-and-filters-page.png" alt="My Plants Page" class="pages">
+
+        </section>
+
+        <section id="pages-details">
+            <h3><span>4.10 </span>Details</h3>
+            <p>
+                This page contains relevant informations about a specific plant, such as description and some recomandations as how often the plant needs to be watered, fertilized and how much sun it needs. If the plant is not added as one of the user's plants, he has
+                the possibility to add it, and if it is already added he can see modify the interraction that he had with it, and can see the notes that he added and remove them.
+            </p>
+
+            <img src="pages/searched-plant-not-in-bin-page.png" alt="Details Page" class="pages">
+            <img src="pages/plant-details-page.png" alt="Details Page" class="pages">
+
+
+        </section>
+    </section>
+    <section id="references">
+        <h2><span>7. </span>Referințe</h2>
+        <ul>
+            <li property="schema:citation" typeof="schema:WebSite" resource="https://www.geeksforgeeks.org/">
+                <cite property="schema:name">
+                        <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>
+                    </cite>
+            </li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
