@@ -91,3 +91,8 @@ h2 {
 .multiple-pages p {
     text-align: center;
 }
+
+.qoc {
+    height: 400px;
+    width: 1000px;
+}
