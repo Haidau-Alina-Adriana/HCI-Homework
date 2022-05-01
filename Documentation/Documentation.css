@@ -14,7 +14,7 @@ body {
     background-color: rgba(250, 239, 226, 0.541);
     padding: 1em;
     width: 80%;
-    height: 1500%;
+    height: 1300%;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     border-radius: 15px;
@@ -63,7 +63,7 @@ h2 {
 
 .tab {
     display: inline-block;
-    margin-left: 60px;
+    margin-left: 53px;
 }
 
 .multiple-pages {
@@ -79,4 +79,14 @@ h2 {
 .qoc {
     height: 400px;
     width: 1000px;
+}
+
+.link-personas {
+    text-align: center;
+    font-size: 2em;
+}
+
+ul {
+    width: 50%;
+    margin-left: 43%;
 }
