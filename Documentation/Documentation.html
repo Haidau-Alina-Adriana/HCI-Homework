@@ -50,9 +50,9 @@
     <section id="architecture">
         <h2><span>3. </span>Application architecture</h2>
         <p>
-            The mobile application opens with the start page, which after taping a user can log in or create a new account if he doesn't have one. After authentication/registration, he is redirected to the main page where there are two possible outcomes: either the
-            page has only a discover section and instagram community section, either a list of plants that need to be taken care of. From here, the user can update watering/adding fertilizer informations or can use the bottom menu to go to the plants
-            he saved, to the plants that he currently has, to his profile or to the searching feature.
+            The mobile application opens with the start page that loads for a few moments and moves on to the login page where a user can log in or create a new account if he doesn't have one. After authentication/registration, he is redirected to the main page where
+            there are two possible outcomes: either the page has only a discover section and instagram community section, either a list of plants that need to be taken care of. From here, the user can update watering/adding fertilizer informations or
+            can use the bottom menu to go to the plants he saved, to the plants that he currently has, to his profile or to the searching feature.
             <br><span class="tab"></span>The application contains 10 pages.
         </p>
     </section>
@@ -121,7 +121,8 @@
         <section id="pages-favorites">
             <h3><span>4.6 </span>Favorites</h3>
             <p>
-                On this page the user can see the plants that he saved and has the possibility to add them in their collection of plants by taping the "+" icon, or remove them from saved plants by taping heart icon next to each plant.
+                On this page the user can see the plants that he saved and has the possibility to add them in their collection of plants by taping the "+" icon, or remove them from saved plants by taping heart icon next to each plant. This actions are reversible: taping
+                again on the heart will add the plant and taping on the add button will remove plant from My plants section.
             </p>
 
             <img src="pages/favorites-page.png" alt="Favorites Page" class="pages">
@@ -139,7 +140,7 @@
         <section id="pages-calendar">
             <h3><span>4.8 </span>Calendar</h3>
             <p>
-                In calendar page the user can mark that he watered and/or added fertilizer on a specific plant for the current day, or he can choose a previous date.
+                In calendar page the user can mark that he watered and/or added fertilizer on a specific plant for the current day, or he can choose a previous date. The user can also add a reminder to check the plant in a specific day.
             </p>
 
             <img src="pages/calendar-page.png" alt="Calendar Page" class="pages">
@@ -148,7 +149,7 @@
         <section id="pages-plants">
             <h3><span>4.9 </span>My plants</h3>
             <p>
-                This page can contain no plants, in which case the user has the possibility to add some plants by taping the "+" icon. In case the user has some plants added, they will appear here with the informations about last watering and fertilizer date, the possibility
+                This page can contain no plants, in which case the user has the possibility to add some plants by taping the "+" icon. In case the user has some plants added, they will appear here with the informations about last watering and fertilizing date, the possibility
                 to remove a plant that he no longer has, and can mark them as watered/fertilized or add a note.
             </p>
             <div class="multiple-pages">
@@ -158,11 +159,11 @@
                 </div>
                 <div>
                     <img src="pages/bin-with-flowers-no-filters-page.png" alt="My Plants Page" class="pages">
-                    <p>My plants with filters</p>
+                    <p>My plants without filters</p>
                 </div>
                 <div>
                     <img src="pages/bin-with-flowers-and-filters-page.png" alt="My Plants Page" class="pages">
-                    <p>My plants without filters</p>
+                    <p>My plants with filters</p>
                 </div>
             </div>
         </section>
@@ -171,7 +172,8 @@
             <h3><span>4.10 </span>Details</h3>
             <p>
                 This page contains relevant informations about a specific plant, such as description and some recomandations as how often the plant needs to be watered, fertilized and how much sun it needs. If the plant is not added as one of the user's plants, he has
-                the possibility to add it, and if it is already added he can see modify the interaction that he had with the plant, and can see the notes that he added and edit or remove them. In this case he can also navigate to the next plant.
+                the possibility to add it, and if it is already added he can see modify the interaction that he had with the plant, and can see the notes that he added and edit or remove them. He can set reminders to water/add fertilizer at a number of
+                days that he chooses. In the second scenario he can also navigate to the next plant.
             </p>
             <div class="multiple-pages">
                 <div>
@@ -191,7 +193,17 @@
         <h2><span>7. </span>Concepts</h2>
 
         <section id="deliverables1">
-            <h3><span>7.1 </span>Wireframe</h3>
+            <h3><span>7.1 </span>Interactive prototype</h3>
+            <div>
+                <p>
+                    An interactive prototype is available here:
+                    <a href="https://github.com/Haidau-Alina-Adriana/HCI-Homework/blob/main/Plants-app.xd">Application prototype</a>.
+                </p>
+            </div>
+        </section>
+
+        <section id="deliverables1">
+            <h3><span>7.2 </span>Wireframe</h3>
             <div>
                 <p>
                     A wireframe for this app:
@@ -201,17 +213,17 @@
         </section>
 
         <section>
-            <h3><span>7.2 </span>Design patterns</h3>
+            <h3><span>7.3 </span>Design patterns</h3>
             <div>
                 <p>
                     Social mobile interaction design patterns used in the wireframes/prototypes:
                     <ol type="1">
                         <li>
-                            Search - The user can find a certain plant by writing a name of plant in the search bar in Search page or if he has a lot of plants, can find it by writing its name in the search bar in My plants page.
+                            Search - The user can find a certain plant by writing its name in the search bar in Search page if he doesn't have it on My plants or if he has a lot of plants, he can find it by writing its name in the search bar in My plants page.
                         </li>
                         <br>
                         <li>
-                            Morphing Controls - Present in Find plant page when the user can simply tap heart and the plant is added to the favorites list. The user knows that if the heart is red then is in favorites list and if it's not red. then is not in favorites list.
+                            Morphing Controls - Present in Find plant page when the user can simply tap heart and the plant is added to the favorites list. The user knows that if the heart is red then is in favorites list and if it's not red, then is not in favorites list.
                         </li>
                         <br>
                         <li>
@@ -227,15 +239,15 @@
                         </li>
                         <br>
                         <li>
-                            Navigation - The primary navigation bar is in the footer, as a menu that can be find at anytime in any page until logging out.
+                            Navigation - The primary navigation bar is in the footer, as a menu that can be found at anytime in any page until logging out.
                         </li>
                         <br>
                         <li>
-                            Changes in midstream - This design pattern is achieved in My plants page where gthe user can write multiple words relevant regarding plants name, and has the possibility of removing a certain filter.
+                            Changes in midstream - This design pattern is achieved in My plants page where the user can write multiple words relevant regarding plants name, and has the possibility of removing a certain filter or all of them.
                         </li>
                         <br>
                         <li>
-                            Splash Screen - The loading screen is the very first thing that the user sees when he opens the app on their mobile device. Even if it is open for a brief moment before moving tp the next page, it's a way of greeting the user.
+                            Splash Screen - The loading screen is the very first thing that the user sees when he opens the app on their mobile device. Even if it is open for a brief moment before moving to the next page, it's a way of greeting the user.
                         </li>
 
                     </ol>
